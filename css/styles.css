@@ -1,3 +1,12 @@
 #show-entry {
   display:none;
 }
+
+.entry {
+  cursor:pointer;
+  color:#9932CC;
+}
+
+.entry:hover {
+  text-decoration:underline;
+}
