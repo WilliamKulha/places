@@ -21,6 +21,20 @@ $(document).ready(function() {
 
     let newDestination = new Destination(place, landmarks, tOY, memories, rating);
     $('#destinations_list').append('<li><span class="entry">' + newDestination.location + '</span></li>')
+    $('.entry').last().click(function() {
+      $('#show-entry').slideDown();
+      $('#show-entry h2').text(newDestination.location.toUpperCase());
+      $('.expand_landmarks').text(newDestination.landmark);
+      $('.expand_toy').text(newDestination.timeofyear);
+      $('.expand_notes').text(newDestination.notes);
+      $('.expand_rating').text(newDestination.rating);
+    });
+    $('#place').val('');
+    $('#landmarks').val('');
+    $('#toy').val('');
+    $('#notes').val('');
+    $('#rating').val('');
+
     console.log(newDestination);
 
   });
