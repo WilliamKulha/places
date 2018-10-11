@@ -1,11 +1,11 @@
 //Business Logic
 
 //Constructor for contacts
-function Destination(location, landmarks, timeofyear, notes, rating) {
+function Destination(location, pointOfInterest, timeofyear, note, rating) {
   this.location = location;
-  this.landmark = landmarks;
+  this.landmark = pointOfInterest;
   this.timeofyear = timeofyear;
-  this.notes = notes;
+  this.notes = note;
   this.rating = rating;
 }
 
@@ -16,11 +16,11 @@ $(document).ready(function() {
     let place = $('#place').val();
     let landmarks = $('#landmarks').val();
     let tOY = $('#toy').val();
-    let note = $('#notes').val();
+    let memories = $('#notes').val();
     let rating = $('#rating').val();
 
-    let newDestination = new Destination(place, landmarks, tOY, note, rating);
-    console.log(newDestination.information());
+    let newDestination = new Destination(place, landmarks, tOY, memories, rating);
+    console.log(newDestination);
 
-  })
-})
+  });
+});
