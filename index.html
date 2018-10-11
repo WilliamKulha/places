@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Trip Journal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center page-header">
+        <h1>Trip Journal</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a new entry:</h2>
+          <form id="destination_form">
+            <div class="form-group">
+              <label for="place">Destination:</label>
+              <input type="text" class="form-control" id="place">
+            </div>
+            <div class="form-group">
+              <label for="landmarks">Major Landmarks:</label>
+              <input type="text" class="form-control" id="landmarks">
+            </div>
+            <div class="form-group">
+              <label for="toy">Time of year you went:</label>
+              <input type="text" class="form-control" id="toy">
+            </div>
+            <div class="form-group">
+              <label for="note">Any notes:</label>
+              <input type="text" class="form-control" id="notes">
+            </div>
+            <div class="form-group">
+              <label for="rating">How would you rate your experience there?</label>
+              <input type="text" class="form-control" id="rating">
+            </div>
+
+            <button type="submit" class="btn btn-lg btn-success">Add Entry</button>
+          </form>
+          <h2>Travel Journal Entries:</h2>
+          <ul id="destinations_list">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-entry">
+            <h2></h2>
+
+            <p>Landmarks:<span class="expand_landmarks"></span></p>
+            <p>Time of Year:<span class="expand_toy"></span></p>
+            <p>Notes:<span class="expand_notes"></span></p>
+            <p>Rating:<span class="expand_rating"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
