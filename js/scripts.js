@@ -34,8 +34,5 @@ $(document).ready(function() {
     $('#toy').val('');
     $('#notes').val('');
     $('#rating').val('');
-
-    console.log(newDestination);
-
   });
 });
