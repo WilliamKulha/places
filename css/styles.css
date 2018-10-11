@@ -10,3 +10,8 @@
 .entry:hover {
   text-decoration:underline;
 }
+
+.gimmespace {
+  margin-top: 20px;
+  border-width:3.5px;
+}
