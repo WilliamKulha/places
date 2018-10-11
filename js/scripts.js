@@ -20,6 +20,7 @@ $(document).ready(function() {
     let rating = $('#rating').val();
 
     let newDestination = new Destination(place, landmarks, tOY, memories, rating);
+    $('#destinations_list').append('<li><span class="entry">' + newDestination.location + '</span></li>')
     console.log(newDestination);
 
   });
